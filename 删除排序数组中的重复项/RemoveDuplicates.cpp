@@ -60,5 +60,12 @@ int main()
 	{
 		cout<<testVec2[i]<<" ";
 	}
+	
+	auto iter_b = testVec2.begin();
+	auto iter_e = testVec2.end();
+	auto iter1 = iter_b + 6;
+	auto iter2 = iter_e - 5;
+	auto flag = iter1 == iter2;
+	cout<<*iter1<<endl;
 	return 0;
 }

@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "字符串全排列算法", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "删除排序数组中的重复项", "删除排序数组中的重复项\删除排序数组中的重复项.vcxproj", "{6CB28D40-14F7-4C40-BCDE-D21ECC10CEE1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "买卖股票的最佳时机II", "买卖股票的最佳时机II\买卖股票的最佳时机II.vcxproj", "{7EABCBFE-FF61-4DBE-A1E4-648906A22169}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{6CB28D40-14F7-4C40-BCDE-D21ECC10CEE1}.Debug|Win32.Build.0 = Debug|Win32
 		{6CB28D40-14F7-4C40-BCDE-D21ECC10CEE1}.Release|Win32.ActiveCfg = Release|Win32
 		{6CB28D40-14F7-4C40-BCDE-D21ECC10CEE1}.Release|Win32.Build.0 = Release|Win32
+		{7EABCBFE-FF61-4DBE-A1E4-648906A22169}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7EABCBFE-FF61-4DBE-A1E4-648906A22169}.Debug|Win32.Build.0 = Debug|Win32
+		{7EABCBFE-FF61-4DBE-A1E4-648906A22169}.Release|Win32.ActiveCfg = Release|Win32
+		{7EABCBFE-FF61-4DBE-A1E4-648906A22169}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
