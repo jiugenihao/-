@@ -43,7 +43,7 @@ namespace Solution
 			return;
 		}
 
-		k = k % len;
+		k = k % len;	// 特别注意，k可能比len大，这时候就要取余
 		vector<int> tmp;
 		for (int i = len - k; i < len; ++i)
 		{
