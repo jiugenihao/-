@@ -81,8 +81,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CommonHeaders.h" />
     <ClInclude Include="containsDuplicate.h" />
+    <ClInclude Include="intersect.h" />
     <ClInclude Include="rotateArray.h" />
+    <ClInclude Include="singleNumber.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

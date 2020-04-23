@@ -26,5 +26,14 @@
     <ClInclude Include="containsDuplicate.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="singleNumber.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonHeaders.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="intersect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

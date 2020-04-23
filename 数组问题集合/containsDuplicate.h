@@ -20,12 +20,9 @@
 /************************************************************************/
 
 #pragma once
-#include <vector>
-#include <map>
-#include <set>
-#include <iostream>
 
-using namespace std;
+#include "CommonHeaders.h"
+
 namespace Solution
 {
 	bool containsDuplicate(vector<int>& nums) 

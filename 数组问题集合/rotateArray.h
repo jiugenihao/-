@@ -23,12 +23,10 @@
 * 要求使用空间复杂度为 O(1) 的 原地 算法。
 */
 /************************************************************************/
-
 #pragma once
-#include <vector>
-#include <iostream>
 
-using namespace std;
+#include "CommonHeaders.h"
+
 namespace Solution
 {
 	//+++++++++++++++++++++++++++++++++++++++++++++++++//
