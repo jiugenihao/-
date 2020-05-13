@@ -84,6 +84,7 @@
     <ClInclude Include="CommonHeaders.h" />
     <ClInclude Include="containsDuplicate.h" />
     <ClInclude Include="intersect.h" />
+    <ClInclude Include="plusOne.h" />
     <ClInclude Include="rotateArray.h" />
     <ClInclude Include="singleNumber.h" />
   </ItemGroup>
