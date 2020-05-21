@@ -38,6 +38,8 @@ int main()
 	int arr7[] = {1,2,3,4};
 	vector<int> tst7(arr7, arr7 + sizeof(arr7) / sizeof(int));
 
+	vector<int> intersection;
+
 	//vector<int> ret1 = Solution::plusOne(tst1);
 	vector<int> ret2 = Solution::plusOne2(tst2);
 	vector<int> ret3 = Solution::plusOne2(tst3);
