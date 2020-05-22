@@ -38,5 +38,14 @@
     <ClInclude Include="plusOne.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="moveZeroes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="twoSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="isValidSudoku.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -84,10 +84,12 @@
     <ClInclude Include="CommonHeaders.h" />
     <ClInclude Include="containsDuplicate.h" />
     <ClInclude Include="intersect.h" />
+    <ClInclude Include="isValidSudoku.h" />
     <ClInclude Include="moveZeroes.h" />
     <ClInclude Include="plusOne.h" />
     <ClInclude Include="rotateArray.h" />
     <ClInclude Include="singleNumber.h" />
+    <ClInclude Include="twoSum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

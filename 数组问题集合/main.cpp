@@ -5,6 +5,8 @@
 #include "singleNumber.h"
 #include "intersect.h"
 #include "plusOne.h"
+#include "moveZeroes.h"
+#include "twoSum.h"
 
 int main()
 {
@@ -15,19 +17,19 @@ int main()
 	vector<int> tst1;
 
 	// 示例2
-	int arr[] = {9,8,7,6,5,4,3,2,1,0};
+	int arr[] = {2, 7, 11, 15};
 	vector<int> tst2(arr, arr + sizeof(arr) / sizeof(int));
 
 	// 示例3
-	int arr3[] = {2,2};
+	int arr3[] = {3,3};
 	vector<int> tst3(arr3, arr3 + sizeof(arr3) / sizeof(int));
 
 	// 示例4
-	int arr4[] = {9,9,9};
+	int arr4[] = {9,0,9};
 	vector<int> tst4(arr4, arr4 + sizeof(arr4) / sizeof(int));
 	
 	// 示例5
-	int arr5[] = {9,4,9,8,4};
+	int arr5[] = {9,0,9,0,0};
 	vector<int> tst5(arr5, arr5 + sizeof(arr5) / sizeof(int));
 
 	// sorted示例1
@@ -38,14 +40,12 @@ int main()
 	int arr7[] = {1,2,3,4};
 	vector<int> tst7(arr7, arr7 + sizeof(arr7) / sizeof(int));
 
-	vector<int> intersection;
+	vector<int> ret1, ret2, ret3;
 
-	//vector<int> ret1 = Solution::plusOne(tst1);
-	vector<int> ret2 = Solution::plusOne2(tst2);
-	vector<int> ret3 = Solution::plusOne2(tst3);
-	vector<int> ret4 = Solution::plusOne2(tst4);
-	vector<int> ret5 = Solution::plusOne2(tst5);
-	//vector<int> ret6 = Solution::plusOne(tst6);
-
+	Solution::moveZeroes(tst1);
+	ret1 = Solution::twoSum(tst1, 9);
+	ret2 = Solution::twoSum(tst2, 9);
+	ret3 = Solution::twoSum(tst3, 6);
+	
 	return 0;
 }
