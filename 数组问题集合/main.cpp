@@ -43,9 +43,9 @@ int main()
 	vector<int> ret1, ret2, ret3;
 
 	Solution::moveZeroes(tst1);
-	ret1 = Solution::twoSum(tst1, 9);
-	ret2 = Solution::twoSum(tst2, 9);
-	ret3 = Solution::twoSum(tst3, 6);
+	ret1 = Solution::twoSum2(tst1, 9);
+	ret2 = Solution::twoSum2(tst2, 9);
+	ret3 = Solution::twoSum2(tst3, 6);
 	
 	return 0;
 }

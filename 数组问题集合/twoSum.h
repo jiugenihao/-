@@ -48,7 +48,8 @@ namespace Solution
 		return ret;
 	}
 
-	
+	// 一遍hash
+	// 特例就是 类似[3,3] target = 6 这种情况
 	vector<int> twoSum2(vector<int>& nums, int target) 
 	{
 		vector<int> ret;
@@ -57,7 +58,22 @@ namespace Solution
 			return ret;
 		}
 
-		
+		map<int, int> tmp;
+		for (int i = 0; i < nums.size(); ++i)
+		{
+			int sub = target - nums[i];
+			auto iter = tmp.find(sub);
+			if (iter != tmp.end())
+			{
+				ret.push_back((*iter).second);
+				ret.push_back(i);
+				break;
+			} 
+			else
+			{
+				tmp[nums[i]] = i;
+			}
+		}
 
 		return ret;
 	}
