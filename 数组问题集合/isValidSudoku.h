@@ -55,8 +55,87 @@
 
 namespace Solution 
 {
-	bool isValidSudoku(vector<vector<char>>& board) {
+	bool isValidSudoku(vector<vector<char>>& board) 
+	{
+		if (board.size() != 9)
+		{
+			return false;
+		}
 
+		for (auto row : board)
+		{
+			if (row.size() != 9)
+			{
+				return false;
+			}
+		}
+
+		map<char, int> m_ij;				// row
+		map<int, map<char, int> > m_ji;		// col
+		map<int, map<char, int> > m_unit;	// unit
+
+		for (int i = 0; i < 9; ++i)
+		{
+			// row
+			m_ij.clear();
+			for (int j = 0; j < 9; ++j)
+			{
+				char c = board[i][j];
+				if (c == '.')
+				{
+					continue;
+				}
+				if (m_ij.find(c) != m_ij.end())
+				{
+					return false;
+				} 
+				else
+				{
+					m_ij[c] = 1;
+				}
+			}
+
+			// col	
+			for (int j = 0; j < 9; ++j)
+			{
+				char c = board[j][i];
+				if (c == '.')
+				{
+					continue;
+				}
+				map<char, int> tmp = m_ji[i];
+				if (tmp.find(c) != tmp.end())
+				{
+					return false;
+				} 
+				else
+				{
+					m_ji[i][c] = 1;
+				}
+			}
+
+			// unit
+			for (int j = 0; j < 9; ++j)
+			{
+				char c = board[i][j];
+				if (c == '.')
+				{
+					continue;
+				}
+				int key = i / 3 * 10 + j / 3;
+				map<char, int> tmp = m_unit[key];
+				if (tmp.find(c) != tmp.end())
+				{
+					return false;
+				} 
+				else
+				{
+					m_unit[key][c] = 1;
+				}
+			}
+		}
+
+		return true;
 	}
 
 

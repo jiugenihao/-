@@ -4,5 +4,6 @@
 #include <iostream>
 #include <algorithm>
 #include <iterator>
+#include <string>
 
 using namespace std;
