@@ -46,6 +46,31 @@ int removeDuplicates(vector<int>& nums)
 	return nums.size();
 }
 
+int removeDuplicates2(vector<int>& nums) 
+{
+	if (nums.size() == 0)
+	{
+		return 0;
+	}
+
+	int index = 0;
+	for (int i = 1; i < nums.size(); ++i)
+	{
+		if (nums[index] == nums[i])
+		{
+			continue;
+		}
+		else
+		{
+			index++;
+			nums[index] = nums[i];
+		}
+	}
+
+	nums.resize(index+1);
+	return nums.size();
+}
+
 int main()
 {
 	// 测试用例1：未初始化的数组
@@ -56,7 +81,7 @@ int main()
 	vector<int> testVec2(arr, arr + sizeof(arr) / sizeof(int));
 	
 	// 执行测试
-	int len = removeDuplicates(testVec2);
+	int len = removeDuplicates2(testVec2);
 	for (int i = 0; i < len; i++) 
 	{
 		cout<<testVec2[i]<<" ";
