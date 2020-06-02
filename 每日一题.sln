@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "买卖股票的最佳时机
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数组问题集合", "数组问题集合\数组问题集合.vcxproj", "{E3196695-4932-4882-82C9-7CD61B060A83}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "字符串问题集合", "字符串问题集合\字符串问题集合.vcxproj", "{033B53B6-3FD2-42EC-A5F9-6E0792725F67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +33,10 @@ Global
 		{E3196695-4932-4882-82C9-7CD61B060A83}.Debug|Win32.Build.0 = Debug|Win32
 		{E3196695-4932-4882-82C9-7CD61B060A83}.Release|Win32.ActiveCfg = Release|Win32
 		{E3196695-4932-4882-82C9-7CD61B060A83}.Release|Win32.Build.0 = Release|Win32
+		{033B53B6-3FD2-42EC-A5F9-6E0792725F67}.Debug|Win32.ActiveCfg = Debug|Win32
+		{033B53B6-3FD2-42EC-A5F9-6E0792725F67}.Debug|Win32.Build.0 = Debug|Win32
+		{033B53B6-3FD2-42EC-A5F9-6E0792725F67}.Release|Win32.ActiveCfg = Release|Win32
+		{033B53B6-3FD2-42EC-A5F9-6E0792725F67}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

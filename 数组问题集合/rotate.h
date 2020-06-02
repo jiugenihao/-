@@ -104,7 +104,7 @@ namespace Solution
 
 		for (int i = 0; i < len - 1; ++i)
 		{
-			for (int j = i; j < len - 1 - i; ++j)	// j的范围是重点
+			for (int j = i; j < len - 1 - i; ++j)	// j的范围是重点[i, len-1-i)
 			{
 				int x1 = i;
 				int y1 = j;
