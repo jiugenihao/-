@@ -26,5 +26,8 @@
     <ClInclude Include="reverseString.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="reverseInt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

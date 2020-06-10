@@ -25,6 +25,8 @@ void testReverseString()
 
 int main()
 {
+	int xxx = 5000000000;
+	cout<<xxx<<endl;
 	testReverseString();
 	return 0;
 }
